@@ -1,0 +1,125 @@
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral Colors */
+  --very-dark-blue: hsl(217, 54%, 11%); /* Main Background */
+  --very-dark-blue2: hsl(216, 50%, 16%); /* card background */
+  --very-dark-blue3: hsl(215, 32%, 27%); /* Line */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--very-dark-blue2);
+  padding: 25px 25px 30px 25px;
+  border-radius: 20px;
+}
+
+main img.img-nft {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+main .one-content {
+  width: 300px;
+}
+
+main h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white);
+  transition: .5s all;
+  padding: 20px 0;
+}
+
+main h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+  transition: .5s all;
+}
+
+main p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+
+main .nft-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--very-dark-blue3);
+}
+
+main .nft-value div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .nft-value div:nth-child(1) p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+main .nft-value div:nth-child(2) p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--soft-blue);
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+main > div > img {
+  width: 35px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+main > div > p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--soft-blue);
+  margin-left: 15px;
+}
+main > div > p span {
+  transition: .5s all;
+  color: var(--white);
+}
+
+main > div > p span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.attribution {
+  font-size: 11px;
+  color: var(--white);
+  padding: 20px;
+}
